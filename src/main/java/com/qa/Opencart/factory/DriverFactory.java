@@ -74,12 +74,12 @@ public class DriverFactory {
 		
 		try
 		{
-		if(env==null)
-					ip = new FileInputStream("./src/test/resources/config/config.properties");
-		if(env.equalsIgnoreCase("qa"))
-			ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
+		if(env == null)
+			ip = new FileInputStream("./src/test/resources/config/config.properties");
+		else if(env.equalsIgnoreCase("qa"))
+				ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
 		else if(env.equalsIgnoreCase("uat"))
-			ip = new FileInputStream("./src/test/resources/config/uat.config.properties");
+				ip = new FileInputStream("./src/test/resources/config/uat.config.properties");
 		
 		prop = new Properties();
 		prop.load(ip);

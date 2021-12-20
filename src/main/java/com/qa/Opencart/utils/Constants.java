@@ -13,6 +13,6 @@ public class Constants {
 	public static final String REGISTER_SUCCESS_MESSG = "Your Account Has Been Created";
 	public static final String REGISTER_SHEET_NAME = "register";
 	public static final String PRODUCT_SHEET_NAME = "search";		
-	public static final int DEFAULT_TIME_OUT = 5;
+	public static final int DEFAULT_TIME_OUT = 4;
 
 }
